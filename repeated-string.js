@@ -1,15 +1,15 @@
-const s = ['abcac'];
-let n = 10;
-let sum = 0;
-let newarray = [];
-while(n--){ 
-    newarray = newarray.concat(s); 
+let s = "a";
+let n = 1000000000000;
+let sum = 0n;
+
+function repeatedString(s, n) {
+   let i = 0;
+   s = s.repeat(n);
+   console.log(s);
+   do {
+      sum = s.slice(0,n).split('a').length - 1;
+      console.log(`Sliced arr ${sum}`);
+   }
+   while (i = 0, i < n, i++);
 }
-
-newarray.forEach(element => {
-    if (element == 'a') {
-        sum++;
-    }
-});
-
-console.log(sum);
+repeatedString(s,n);
