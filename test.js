@@ -1,3 +1,5 @@
+// Array
+
 /*
 const people = [
     {name: 'Andrew', budget: 1000},
@@ -15,23 +17,70 @@ console.log(allBudget)
 
 */
 
-/*
-setInterval ( () => {
-    console.log('After timeout')
-}, 1000)
-*/
 
-/*
-const delay = (callback, wait = 1000) => {
-    setTimeout(callback, wait)
+// setInterval ( () => {
+//     console.log('After timeout')
+// }, 1000)
+
+// ----------------
+
+// const delay = (callback, wait = 1000) => {
+//     setTimeout(callback, wait)
+// }
+// 
+// delay( () => {
+//     console.log('After 2 seconds')
+// }, 2000)
+
+//-------------------
+
+//Functions
+
+function great(name) {
+    console.log('Привет - ', name);
 }
 
-delay( () => {
-    console.log('After 2 seconds')
-}, 2000)
-*/
+const arros = (name) => {
+    console.log('Привет - ', name);
+}
 
-/*
+const arrow2 = name => console.log('Привет - ', name);
+arrow2('Andrew');
+
+//const pow2 = num => {
+//    return num ** 2
+//}
+//identical to:
+const pow2 = num => num ** 2
+
+console.log(pow2(5));
+
+// Parameters by default ---------------
+
+const sum = (a, b) => {
+    return a + b;
+}
+
+const add5 = sum.bind(null, 5);
+const add5Manual = (b) => {
+    return 5 + b;
+};
+console.log(add5(20)); // 25
+
+//operator Rest
+
+function sumAll(...all){
+    let result = 0;
+    for (let num of all){
+        result += num;
+    }
+    return result; 
+}
+const res = sumAll(1, 2, 3, 4, 5, 6, 7);
+console.log('sumAll = '+ res);
+
+
+
 const delay = (wait = 1000) => {
     const promise =  new Promise( (resolve, reject) => {
     setTimeout( () => {
@@ -47,9 +96,9 @@ delay (2500)
     })
     .catch( err => console.log(err))
     .finally( () => console.log('Finally'))
-    */
-/*
 
+    
+/*
 const heading = document.getElementById('title')
 //const headin2 = document.getElementsByTagName('h2')[0]
 //const headin2 = document.getElementsByClassName('h2-class')[0]

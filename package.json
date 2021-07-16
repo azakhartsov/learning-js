@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/azakhartsov/learning-js/issues"
   },
-  "homepage": "https://github.com/azakhartsov/learning-js#readme"
+  "homepage": "https://github.com/azakhartsov/learning-js#readme",
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
 }

@@ -34,16 +34,6 @@ if (todo.completed) {
         return (...innerArgs) => fn.call(scope, ...args, ...innerArgs);
     }
 
-    const sum = (a, b) => {
-        return a + b;
-    }
-
-    const add5 = sum.bind(null, 5);
-    const add5Manual = (b) => {
-        return 5 + b;
-    };
-    console.log(add5(20)); // 25
-
     return (
         <li style={styles.li}>
         <span className={classes.join(' ')}>
