@@ -1,4 +1,5 @@
 // Array
+// comments 
 
 /*
 const people = [
